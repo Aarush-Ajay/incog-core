@@ -1,0 +1,42 @@
+# ========================
+# OS & Environment Files
+# ========================
+.DS_Store
+Thumbs.db
+.env
+.env.*
+secrets.json
+
+# ========================
+# C2 Backend & XAI (Python)
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.pytest_cache/
+*.sqlite3
+
+# Ignore heavy ML datasets - these should be downloaded locally, not pushed to GitHub!
+xai-engine/datasets/
+*.csv
+*.h5
+*.model
+
+# ========================
+# Mobile Client (Flutter / Android)
+# ========================
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+android/key.properties
+*.keystore
+*.jks
+
+# IDEs
+.idea/
+.vscode/
+*.swp
